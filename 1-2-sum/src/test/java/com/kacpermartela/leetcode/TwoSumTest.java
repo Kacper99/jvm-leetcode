@@ -1,9 +1,9 @@
 package com.kacpermartela.leetcode;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 class TwoSumTest {
 
@@ -16,14 +16,14 @@ class TwoSumTest {
 
         assertThat(result).containsExactlyInAnyOrder(0, 1);
     }
+
     @Test
     void twoSum2() {
-        int[] nums = {-10,7,19,15};
+        int[] nums = {-10, 7, 19, 15};
         int target = 9;
 
         int[] result = TwoSum.twoSum(nums, target);
 
         assertThat(result).containsExactlyInAnyOrder(0, 2);
     }
-
 }

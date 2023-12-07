@@ -8,7 +8,8 @@ public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         record NumWithOriginalIndex(int num, int originalIndex) {}
 
-        final var pq = new PriorityQueue<NumWithOriginalIndex>(Comparator.comparing(NumWithOriginalIndex::num, Integer::compareTo));
+        final var pq = new PriorityQueue<NumWithOriginalIndex>(
+                Comparator.comparing(NumWithOriginalIndex::num, Integer::compareTo));
         for (int i = 0; i < nums.length; i++) {
             pq.add(new NumWithOriginalIndex(nums[i], i));
         }
