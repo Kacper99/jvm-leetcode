@@ -8,4 +8,5 @@ include(
         "0121-best-time-to-buy-sell-stock",
         "0125-valid-palindrome",
         "0167-2-sum-sorted",
+        "0424-longest-repeating-character-replacement",
 )
