@@ -59,13 +59,22 @@ class LongestRepeatingCharacterReplacementTest {
     }
 
     @Test
-    void kIs0() {
+    void AABA_0() {
         String s = "AABA";
         int k = 0;
 
         int longest = characterReplacement(s, k);
 
         assertThat(longest).isEqualTo(2);
+    }
 
+    @Test
+    void ABAA_0() {
+        String s = "ABAA";
+        int k = 0;
+
+        int longest = characterReplacement(s, k);
+
+        assertThat(longest).isEqualTo(2);
     }
 }
