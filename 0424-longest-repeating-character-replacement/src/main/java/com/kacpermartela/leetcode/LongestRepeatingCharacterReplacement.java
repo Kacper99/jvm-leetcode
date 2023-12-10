@@ -20,9 +20,7 @@ public class LongestRepeatingCharacterReplacement {
 
         while (rightPointer < s.length()) {
             charCount.merge(s.charAt(rightPointer), 1, Integer::sum);
-            int mostFrequent = charCount.values().stream()
-                    .max(Integer::compareTo)
-                    .orElseThrow(() -> new IllegalStateException("This shouldn't happen"));
+            int mostFrequent = mostFrequent(charCount);
 
             int stringLen = rightPointer - leftPointer + 1;
             if (stringLen - mostFrequent <= k) {
@@ -35,5 +33,13 @@ public class LongestRepeatingCharacterReplacement {
         }
 
         return maxLength;
+    }
+
+    private static int mostFrequent(Map<Character, Integer> map) {
+        int mostFrequent = 0;
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            mostFrequent = Math.max(mostFrequent, entry.getValue());
+        }
+        return mostFrequent;
     }
 }
