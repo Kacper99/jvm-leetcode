@@ -6,6 +6,7 @@ include(
         "0011-container-with-most-water",
         "0015-3-sum",
         "0020-valid-parentheses",
+        "0026-remove-duplicates-from-sorted-array",
         "0121-best-time-to-buy-sell-stock",
         "0125-valid-palindrome",
         "0167-2-sum-sorted",
