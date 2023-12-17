@@ -12,5 +12,6 @@ include(
         "0125-valid-palindrome",
         "0167-2-sum-sorted",
         "0424-longest-repeating-character-replacement",
+        "0682-baseball-game",
         "1929-concatenation-of-array"
 )
