@@ -8,6 +8,7 @@ include(
         "0020-valid-parentheses",
         "0026-remove-duplicates-from-sorted-array",
         "0027-remove-element",
+        "0074-search-a-2d-matrix",
         "0121-best-time-to-buy-sell-stock",
         "0125-valid-palindrome",
         "0167-2-sum-sorted",
