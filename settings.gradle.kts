@@ -15,5 +15,6 @@ include(
         "0424-longest-repeating-character-replacement",
         "0682-baseball-game",
         "0704-binary-search",
+        "0875-koko-eating-bananas",
         "1929-concatenation-of-array"
 )
