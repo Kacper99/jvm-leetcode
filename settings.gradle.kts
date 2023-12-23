@@ -11,6 +11,7 @@ include(
         "0074-search-a-2d-matrix",
         "0121-best-time-to-buy-sell-stock",
         "0125-valid-palindrome",
+        "0153-minimum-in-sorted-array",
         "0167-2-sum-sorted",
         "0424-longest-repeating-character-replacement",
         "0682-baseball-game",
