@@ -1,7 +1,5 @@
 package com.kacpermartela.leetcode;
 
-import java.util.stream.IntStream;
-
 public class Koko {
 
     public static int minEatingSpeed(int[] piles, int h) {
@@ -18,7 +16,7 @@ public class Koko {
             int middle = left + (right - left) / 2;
 
             long totalTimeToEat = 0;
-            for (int pile: piles) {
+            for (int pile : piles) {
                 int hoursRequiredToEatPile = Math.ceilDiv(pile, middle);
                 totalTimeToEat += hoursRequiredToEatPile;
             }
