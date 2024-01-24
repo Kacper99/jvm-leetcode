@@ -13,6 +13,7 @@ include(
         "0125-valid-palindrome",
         "0153-minimum-in-sorted-array",
         "0167-2-sum-sorted",
+        "0206-reverse-linked-list",
         "0424-longest-repeating-character-replacement",
         "0682-baseball-game",
         "0704-binary-search",
