@@ -6,6 +6,7 @@ include(
         "0011-container-with-most-water",
         "0015-3-sum",
         "0020-valid-parentheses",
+        "0021-merge-two-sorted-lists",
         "0026-remove-duplicates-from-sorted-array",
         "0027-remove-element",
         "0074-search-a-2d-matrix",
