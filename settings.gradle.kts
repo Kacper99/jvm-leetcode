@@ -1,6 +1,7 @@
 rootProject.name = "jvm-leetcode"
 
 include(
+        "tree-node",
         "0001-2-sum",
         "0003-longest-substring-without-repeating-characters",
         "0011-container-with-most-water",
@@ -10,6 +11,7 @@ include(
         "0026-remove-duplicates-from-sorted-array",
         "0027-remove-element",
         "0074-search-a-2d-matrix",
+        "0104-maximum-depth-of-binary-tree",
         "0121-best-time-to-buy-sell-stock",
         "0125-valid-palindrome",
         "0153-minimum-in-sorted-array",
