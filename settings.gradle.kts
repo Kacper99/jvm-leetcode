@@ -19,6 +19,7 @@ include(
         "0226-invert-binary-tree",
         "0206-reverse-linked-list",
         "0424-longest-repeating-character-replacement",
+        "0451-sort-characters-by-frequency",
         "0543-diameter-of-binary-tree",
         "0682-baseball-game",
         "0704-binary-search",
