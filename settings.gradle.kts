@@ -23,6 +23,7 @@ include(
         "0451-sort-characters-by-frequency",
         "0543-diameter-of-binary-tree",
         "0682-baseball-game",
+        "0690-employee-importance",
         "0704-binary-search",
         "0875-koko-eating-bananas",
         "0981-time-based-key-value-store",
