@@ -27,6 +27,7 @@ include(
         "0704-binary-search",
         "0875-koko-eating-bananas",
         "0981-time-based-key-value-store",
+        "1267-count-servers-that-communicate",
         "1929-concatenation-of-array",
         "2506-count-pairs-of-similar-strings",
 )
