@@ -1,33 +1,16 @@
 rootProject.name = "jvm-leetcode"
 
+val challengeDirectoryNamePattern = Regex("\\d{4}-.*")
+
+rootDir.listFiles { file -> file.isDirectory }!!
+    .asSequence()
+    .map { it.name }
+    .filter { it.matches(challengeDirectoryNamePattern) }
+    .sorted()
+    .onEach { println(it) }
+    .onEach { include(it) }
+    .toList()
+
 include(
         "tree-node",
-        "0001-2-sum",
-        "0003-longest-substring-without-repeating-characters",
-        "0011-container-with-most-water",
-        "0015-3-sum",
-        "0020-valid-parentheses",
-        "0021-merge-two-sorted-lists",
-        "0026-remove-duplicates-from-sorted-array",
-        "0027-remove-element",
-        "0074-search-a-2d-matrix",
-        "0104-maximum-depth-of-binary-tree",
-        "0121-best-time-to-buy-sell-stock",
-        "0125-valid-palindrome",
-        "0153-minimum-in-sorted-array",
-        "0167-2-sum-sorted",
-        "0198-house-robber",
-        "0226-invert-binary-tree",
-        "0206-reverse-linked-list",
-        "0424-longest-repeating-character-replacement",
-        "0451-sort-characters-by-frequency",
-        "0543-diameter-of-binary-tree",
-        "0682-baseball-game",
-        "0690-employee-importance",
-        "0704-binary-search",
-        "0875-koko-eating-bananas",
-        "0981-time-based-key-value-store",
-        "1267-count-servers-that-communicate",
-        "1929-concatenation-of-array",
-        "2506-count-pairs-of-similar-strings",
 )
