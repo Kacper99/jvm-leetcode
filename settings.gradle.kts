@@ -13,4 +13,5 @@ rootDir.listFiles { file -> file.isDirectory }!!
 
 include(
         "tree-node",
+        "list-node",
 )
