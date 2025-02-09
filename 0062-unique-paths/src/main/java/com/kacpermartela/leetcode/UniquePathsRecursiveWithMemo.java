@@ -1,6 +1,6 @@
 package com.kacpermartela.leetcode;
 
-public class UniquePaths {
+public class UniquePathsRecursiveWithMemo {
 
     public static int uniquePaths(int m, int n) {
         int[][] memo = new int[m][n];
