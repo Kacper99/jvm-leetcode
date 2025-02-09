@@ -1,9 +1,9 @@
 package com.kacpermartela.leetcode;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 class UniquePathsDPTest {
 
@@ -21,5 +21,4 @@ class UniquePathsDPTest {
     void example3() {
         assertThat(UniquePathsDP.uniquePaths(51, 9)).isEqualTo(1916797311);
     }
-
 }
