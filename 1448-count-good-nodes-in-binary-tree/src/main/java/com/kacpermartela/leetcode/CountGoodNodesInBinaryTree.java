@@ -1,26 +1,20 @@
 package com.kacpermartela.leetcode;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 public class CountGoodNodesInBinaryTree {
 
     public static int goodNodes(TreeNode root) {
-        final var pq = new PriorityQueue<Integer>(Comparator.reverseOrder());
-        return helper(root, pq);
+        return 1 + helper(root.left, root.val) + helper(root.right, root.val);
     }
 
-    public static int helper(TreeNode root, PriorityQueue<Integer> pq) {
+    public static int helper(TreeNode root, int max) {
         if (root == null) {
             return 0;
         }
         int val = root.val;
-        Integer peek = pq.peek();
-        pq.add(val);
-        if (peek == null || val >= peek) {
-            return 1 + helper(root.left, new PriorityQueue<>(pq)) + helper(root.right, new PriorityQueue<>(pq));
+        if (val >= max) {
+            return 1 + helper(root.left, val) + helper(root.right, val);
         } else {
-            return helper(root.left, new PriorityQueue<>(pq)) + helper(root.right, new PriorityQueue<>(pq));
+            return helper(root.left, max) + helper(root.right, max);
         }
     }
 }
