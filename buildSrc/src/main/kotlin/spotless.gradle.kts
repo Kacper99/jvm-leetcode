@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     id("com.diffplug.spotless")
 }
@@ -11,6 +9,9 @@ spotless {
         importOrder()
 
         palantirJavaFormat()
+
+        // Excluded because neither palantir nor google support instanceof pattern matching
+        targetExclude("**/BalancedBinaryTree.java")
     }
 
     kotlin {

@@ -14,12 +14,14 @@ public class BalancedBinaryTree {
         Result left = helper(treeNode.left);
         Result right = helper(treeNode.right);
 
+        // spotless:off
         if (left instanceof Result.Height(int leftHeight) && right instanceof Result.Height(int rightHeight)) {
             if (Math.abs(leftHeight - rightHeight) > 1) {
                 return new Result.Unbalanced();
             }
             return Result.Height.of(Math.max(leftHeight, rightHeight) + 1);
         }
+        // spotless:on
 
         return new Result.Unbalanced();
     }

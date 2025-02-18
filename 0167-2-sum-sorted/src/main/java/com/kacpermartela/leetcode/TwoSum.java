@@ -3,7 +3,6 @@ package com.kacpermartela.leetcode;
 public class TwoSum {
 
     /**
-     *
      * @param numbers Has to be already sorted in ascending order
      */
     public static int[] twoSum(int[] numbers, int target) {
